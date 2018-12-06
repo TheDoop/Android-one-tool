@@ -1,15 +1,23 @@
 ##  Kurulum
 
-* ```git clone https://github.com/TheDoop/androidone-2nd-tool.git```
-* ```cd androidone-2nd-tool```
+* ```https://github.com/TheDoop/Android-one-tool```
+* ```cd Android-one-tool```
+
+### Linux
 * ```chmod +x tool```
 * ```./tool```
+### Windows
+```Just open Daot.bat```
 
-
-## Linux
 
 ### Araç ana menü
-![Image of tool](https://github.com/TheDoop/androidone-2nd-tool/blob/master/mainmenu.png)
+
+#### Linux:
+kendime not: ekran görüntüsü ekle.
+
+#### Windows:
+![main](https://github.com/TheDoop/Android-one-tool/blob/master/%C4%B0mages/main.PNG?raw=true)
+![root](https://github.com/TheDoop/Android-one-tool/blob/master/%C4%B0mages/root.PNG?raw=true)
 
 ### Neler yapabiliyor ?
 * Son sürüm twrp indirip kurabilme (Crackling, Seed)
@@ -17,25 +25,10 @@
 * Sürücüleri Yükleme (Şimdilik: Arch, Debian ve ubuntu)
 * Otomatik root
 * Güncel Magisk indirme ve kurma
-
-## Windows
-![AOT Logo](https://raw.githubusercontent.com/TheDoop/Android-one-2nd-tool/master/%C4%B0mages/daot.ico)
-
-## features
-* İnstall TWRP (seed & crackling)
-* Root device (Magisk & SuperSU)
-* Oem lock & Unlock
 * Log
 
-## Screenshots
-![main](https://github.com/TheDoop/Android-one-2nd-tool/blob/master/%C4%B0mages/main.PNG)
-![root](https://github.com/TheDoop/Android-one-2nd-tool/blob/master/%C4%B0mages/root.PNG)
-
-## Usage
-Just open Daot.bat
-
 ## Next ?
-- [ ] APK installer
+- [ ] APK installer (neredeyse bitti)
 - [ ] Driver İnstalled
 - [x] Root
 - [x] TWRP installer
@@ -43,5 +36,5 @@ Just open Daot.bat
 ### Destek
 * Telegram
 [Telegram](http://t.me/F_Doop)
-* Telegram Seed,Crackling Grubu
-[Telegram-Group](https://t.me/joinchat/CWef7kZYepljmBOwTdnmcQ)
+* Telegram'da DroidTR topluluğuna katılın!
+[Telegram-Group](https://t.me/joinchat/droidtr)
