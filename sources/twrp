@@ -1,0 +1,42 @@
+#!/bin/bash
+chmod +x crackling
+chmod +x seed
+chmod +x oem
+tput setaf 1; echo    "-------------------------------"
+tput setaf 2; echo    "1. Seed Twrp Kur"
+tput setaf 2; echo    "2. Crackling Twrp kur"
+tput setaf 2; echo    "3. dizindeki dosyalari goster"
+tput setaf 2; echo    "4. Geri"
+tput setaf 1; echo    "-------------------------------"
+
+tput setaf 1; echo    "---------------------------------"
+tput setaf 2; echo        "Secenegi giriniz : "
+tput setaf 1; echo    "---------------------------------"
+
+read secenek
+
+case $secenek in
+        1)
+          chmod +x seed
+          sh seed
+          ;;
+        2)
+          chmod +x crackling
+          sh crackling
+          ;;
+        3)
+		  clear
+          ls -al
+		  bash twrp
+          ;;
+        4)
+			cd ..
+			clear
+          sh tool
+          ;;
+        *)
+		  clear
+          echo Hatali secenek
+		  bash twrp
+		  ;;
+esac

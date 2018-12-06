@@ -1,0 +1,37 @@
+tput setaf 1; echo  "----------------------------"
+tput setaf 2; echo  "${blue}dizin oluşturuluyor"
+tput setaf 1; echo  "----------------------------"
+
+tput sgr0
+
+tput setaf 1; echo  "-----------------------------------------"
+tput setaf 2; echo   "${red}En Son sürüm TWRP indiriliyor..."
+tput setaf 1; echo  "-----------------------------------------"
+
+
+rm twrp-*
+wget https://eu.dl.twrp.me/seed/twrp-3.1.1-0-seed.img
+
+
+tput setaf 1; echo  "-------------------------------------------------------------------------------"
+tput setaf 2; echo   "Devam etmek için Enter'a basın twrp otomatik olarak cihazınıza yüklenecektir"
+tput setaf 1; echo  "-------------------------------------------------------------------------------"
+
+read _
+
+tput setaf 1; echo  "---------------------------"
+tput setaf 2; echo  " TWRP cihaza yükleniyor..."
+tput setaf 1; echo  "---------------------------"
+fastboot flash recovery twrp*
+
+
+
+tput setaf 1; echo  "--------------------------------------------------------"
+tput setaf 2; echo   "Yükleme tamamlandı! Devam etmek için [ENTER]           "
+tput setaf 1; echo  "--------------------------------------------------------"
+
+read _
+
+clear
+bash twrp
+

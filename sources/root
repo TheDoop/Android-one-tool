@@ -1,0 +1,102 @@
+#!/bin/bash
+
+tput setaf 1; echo    "----------------------------------"
+tput setaf 2; echo    "1. SuperSu (Android 5.x)"
+tput setaf 2; echo    "2. SuperSu (Android 6.x)"
+tput setaf 2; echo    "3. SuperSu (Android 7.x)"
+tput setaf 2; echo    "4. MagiskSU (Universal)"
+tput setaf 2; echo    "5. Geri"
+tput setaf 1; echo    "----------------------------------"
+
+tput setaf 1; echo    "-------------------------------"
+tput setaf 2; echo        "Secenegi giriniz : "
+tput setaf 1; echo    "-------------------------------"
+
+read secenek
+
+case $secenek in
+        1)
+          tput setaf 1; echo    "-----------------------------------------------"
+          tput setaf 2; echo        "SuperSu (android 5.1) Şuanda Yükleniyor"
+          tput setaf 1; echo    "-----------------------------------------------"
+          adb kill-server
+          adb reboot recovery
+          adb sideload supersu5x.zip
+          adb reboot
+          tput setaf 1; echo    "------------------------------"
+          tput setaf 2; echo        "Yükleme Tamamlandı!"
+          tput setaf 1; echo    "------------------------------"
+          cd ..
+          cd ..
+          bash tool
+          ;;
+        2)
+          tput setaf 1; echo    "-----------------------------------------------"
+          tput setaf 2; echo        "SuperSu (android 6.x) Şuanda Yükleniyor"
+          tput setaf 1; echo    "-----------------------------------------------"
+          adb kill-server
+          adb reboot recovery
+          adb sideload supersu6x.zip
+          adb reboot
+          tput setaf 1; echo    "------------------------------"
+          tput setaf 2; echo        "Yükleme Tamamlandı!"
+          tput setaf 1; echo    "------------------------------"
+          cd ..
+          cd ..
+          bash tool
+          ;;
+        3)
+          tput setaf 1; echo    "-----------------------------------------------"
+          tput setaf 2; echo        "SuperSu (android 7.x) Şuanda Yükleniyor"
+          tput setaf 1; echo    "-----------------------------------------------"
+          adb kill-server
+          adb reboot recovery
+          adb sideload supersu7x.zip
+          adb reboot
+          tput setaf 1; echo    "------------------------------"
+          tput setaf 2; echo        "Yükleme Tamamlandı!"
+          tput setaf 1; echo    "------------------------------"
+          cd ..
+          cd ..
+          bash tool
+          ;;
+        4)
+          tput setaf 1; echo    "-----------------------------------------------"
+          tput setaf 2; echo        "MagiskSu (Universal) Şuanda İndiriliyor"
+          tput setaf 1; echo    "-----------------------------------------------"
+          adb kill-server
+          adb reboot recovery
+          
+          wget https://github.com/topjohnwu/Magisk/releases/download/v16.0/Magisk-v16.0.zip
+		  
+          tput setaf 1; echo    "-----------------------------------------------"
+          tput setaf 2; echo        "MagiskSu (Universal) Şuanda Yükleniyor"
+          tput setaf 1; echo    "-----------------------------------------------"
+		  
+          adb sideload /workdir/root/Magisk*
+          adb reboot
+		  
+          tput setaf 1; echo    "------------------------------"
+          tput setaf 2; echo        "Yükleme Tamamlandı!"
+          tput setaf 1; echo    "------------------------------"
+          
+          cd ..
+          bash tool
+          ;;       
+        5)
+          clear
+          bash tool
+          ;;       
+
+        *)
+          clear
+		  echo Hatali secenek
+		  bash root
+		  ;;
+esac
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+pacman -Sy
+pacman -S android-tools android-udev
+clear
+
+tput setaf 1; echo    "---------------------------------"
+tput setaf 2; echo           "sürücüler kuruldu "
+tput setaf 1; echo    "---------------------------------"
+
+cd ..
+bash tool

@@ -1,0 +1,40 @@
+clear
+tput setaf 1; echo  "----------------------------"
+tput setaf 2; echo  "${blue}dizin oluşturuluyor"
+tput setaf 1; echo  "----------------------------"
+
+tput sgr0
+
+tput setaf 1; echo  "-----------------------------------------"
+tput setaf 2; echo   "${red}En Son sürüm TWRP indiriliyor..."
+tput setaf 1; echo  "-----------------------------------------"
+
+tput sgr0
+
+rm twrp-*
+wget http://www.theflamingskull.com/downloads/crackling/TWRP-crackling-3.2.3.img
+
+
+tput setaf 1; echo  "-------------------------------------------------------------------------------"
+tput setaf 2; echo   "Devam etmek için Enter'a basın twrp otomatik olarak cihazınıza yüklenecektir"
+tput setaf 1; echo  "-------------------------------------------------------------------------------"
+
+read _
+
+tput setaf 1; echo  "---------------------------"
+tput setaf 2; echo  " TWRP cihaza yükleniyor..."
+tput setaf 1; echo  "---------------------------"
+fastboot flash recovery twrp*
+
+tput sgr0 
+
+tput setaf 1; echo  "--------------------------------------------------------"
+tput setaf 2; echo   "Yükleme tamamlandı! Devam etmek için [ENTER]           "
+tput setaf 1; echo  "--------------------------------------------------------"
+
+read _
+
+
+clear
+cd ..
+bash tool

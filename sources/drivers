@@ -1,0 +1,37 @@
+#!/bin/bash
+clear
+tput setaf 1; echo    "-------------------------------"
+tput setaf 2; echo    "      Dağıtım Seçiniz          "
+tput setaf 2; echo    " 1- Debian/Debian-based        "
+tput setaf 2; echo    " 2- Ubuntu/Ubuntu-based        "
+tput setaf 2; echo    " 3- Arch/Arch-based            "
+tput setaf 2; echo    " 4- Geri                       "
+tput setaf 1; echo    "-------------------------------"
+
+read secenek
+
+case $secenek in
+
+   1)
+     chmod +x debian
+     bash debian
+     ;;
+   2)
+     chmod +x ubuntu
+     bash ubuntu
+     ;;
+   3)
+     chmod +x arch
+     bash arch
+     ;;
+   4)
+     cd ..
+	 clear
+	 bash tool 
+     ;;
+   *)
+     tput setaf 1; echo Hatalı Seçecek
+	 bash drivers
+     ;;
+	
+esac

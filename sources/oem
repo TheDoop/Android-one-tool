@@ -1,0 +1,43 @@
+#!/bin/bash
+
+clear
+tput setaf 1; echo    "----------------------------------"
+tput setaf 2; echo    "1. Oem kilidi aç"
+tput setaf 2; echo    "2. Oem kilidi kapat"
+tput setaf 2; echo    "3. Fastboot modunda yeniden başlat"
+tput setaf 2; echo    "4. Geri"
+tput setaf 1; echo    "----------------------------------"
+
+tput setaf 1; echo    "-------------------------------"
+tput setaf 2; echo        "Secenegi giriniz : "
+tput setaf 1; echo    "-------------------------------"
+
+read secenek
+
+case $secenek in
+        1)
+          fastboot oem unlock-go
+          clear
+          sh oem
+          ;;
+        2)
+          fastboot oem lock-go
+		  clear
+          sh oem
+          ;;
+        3)
+          adb reboot bootloader
+		  clear
+          sh oem
+          ;;
+        4)
+		  cd ..
+          clear
+          sh tool
+          ;;       
+        *)
+		  clear
+          echo Hatali secenek
+		  bash oem
+		  ;;
+esac

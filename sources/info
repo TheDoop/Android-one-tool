@@ -1,0 +1,63 @@
+#!/bin/bash
+
+clear
+
+tput setaf 1; echo "--------------------------------------"
+tput setaf 2; echo " Bu Araç Üşengeçler için yapılmıştır"
+tput setaf 2; echo " Açık kaynak kodludur ve istediğiniz"
+tput setaf 2; echo " Gibi düzenleyebilirsiniz"
+tput setaf 1; echo "----------------------------------"
+
+
+tput setaf 1; echo    "----------------------------------"
+tput setaf 2; echo    "1. Github Sayfasını aç"
+tput setaf 2; echo    "2. Forum Konusunu aç"
+tput setaf 2; echo    "3. Geliştiriciye Telegram dan ulaş"
+tput setaf 2; echo    "4. Telegram Crackling Grubuna katıl"
+tput setaf 2; echo    "5. Geri"
+tput setaf 1; echo    "----------------------------------"
+
+tput setaf 1; echo    "-------------------------------"
+tput setaf 2; echo        "Secenegi giriniz : "
+tput setaf 1; echo    "-------------------------------"
+
+read secenek
+
+case $secenek in
+        1)
+          xdg-open https://github.com/TheDoop/androidone-2nd-tool
+          ;;
+        2)
+          tput setaf 2; echo daha konu açmadım krdşm
+		  read
+		  bash info
+          ;;
+        3)
+          xdg-open http://t.me/TheDoop
+          ;;
+        4)
+          xdg-open https://t.me/projectcrackling
+          ;;       
+        5)
+			cd ..
+			clear
+          sh tool
+          ;;       
+
+        *)
+          echo Hatali secenek
+		  bash info
+		  ;;
+esac
+
+
+
+
+
+
+
+
+
+
+
+

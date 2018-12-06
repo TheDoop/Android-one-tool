@@ -1,0 +1,22 @@
+apt install fastboot android-tools-adb* -y &&
+
+tput setaf 1; echo    "---------------------------------"
+tput setaf 2; echo          "sürücüler kuruldu "
+tput setaf 1; echo    "---------------------------------"
+ 
+printf 'Devam etmek için [ENTER]'
+read _
+
+ 
+clear
+bash ../tool
+
+
+
+
+
+
+
+
+
+
