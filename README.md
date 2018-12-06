@@ -29,9 +29,9 @@ kendime not: ekran görüntüsü ekle.
 
 ## Next ?
 - [ ] APK installer (neredeyse bitti)
-- [ ] Driver İnstalled
+- [ ] Driver yükleyici (linux için tamam)
 - [x] Root
-- [x] TWRP installer
+- [x] TWRP yükleyici
 
 ### Destek
 * Telegram
