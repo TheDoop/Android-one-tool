@@ -16,7 +16,7 @@ https://thedoop.github.io/Android-one-tool/
 ### Araç ana menü
 
 #### Linux:
-kendime not: ekran görüntüsü ekle.
+![linux](https://github.com/TheDoop/Android-one-tool/blob/master/%C4%B0mages/34.PNG)
 
 #### Windows:
 ![main](https://github.com/TheDoop/Android-one-tool/blob/master/%C4%B0mages/main.PNG?raw=true)
